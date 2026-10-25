@@ -1336,3 +1336,92 @@ img {
   }
 }
 
+
+.sustainability-hero {
+  padding: 100px 0 90px;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.sustainability-hero-content {
+  max-width: 1000px;
+}
+
+.sustainability-hero .section-label {
+  color: var(--lime);
+}
+
+.sustainability-hero h1 {
+  max-width: 950px;
+  margin: 20px 0;
+  font-size: clamp(2.8rem, 6vw, 5.3rem);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.sustainability-hero h1 span {
+  display: block;
+  color: var(--lime);
+}
+
+.sustainability-hero-content > p:not(.section-label) {
+  max-width: 650px;
+  margin-bottom: 28px;
+  color: var(--pale-blue);
+  line-height: 1.9;
+}
+
+.sustainability-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.sustainability-copy p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.sustainability-priorities {
+  background: var(--background);
+}
+
+.sustainability-vision {
+  background: var(--pale-blue);
+}
+
+.sustainability-vision-content {
+  max-width: 850px;
+  text-align: center;
+}
+
+.sustainability-vision-content .section-title {
+  margin-inline: auto;
+}
+
+.sustainability-vision-content h2 {
+  margin: 18px 0;
+  color: var(--navy);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+.sustainability-vision-content > p:not(.section-label) {
+  margin: 0 auto 28px;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .sustainability-hero {
+    padding: 72px 0 64px;
+  }
+
+  .sustainability-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
