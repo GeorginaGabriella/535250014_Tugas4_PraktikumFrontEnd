@@ -1216,3 +1216,123 @@ img {
     min-height: 210px;
   }
 }
+
+
+.news-detail-hero {
+  position: relative;
+  display: flex;
+  min-height: 500px;
+  align-items: center;
+  overflow: hidden;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.news-detail-image,
+.news-detail-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.news-detail-image {
+  background-color: var(--navy);
+  background-position: center;
+  background-size: cover;
+}
+
+.news-detail-overlay {
+  background: linear-gradient(
+    90deg,
+    rgba(4, 44, 143, 0.96) 0%,
+    rgba(4, 44, 143, 0.78) 60%,
+    rgba(4, 44, 143, 0.3) 100%
+  );
+}
+
+.news-detail-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.news-detail-content .section-label {
+  color: var(--lime);
+}
+
+.news-detail-content h1 {
+  max-width: 850px;
+  margin: 18px 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.news-detail-date {
+  color: var(--pale-blue);
+  font-size: 0.9rem;
+}
+
+.news-detail-excerpt {
+  max-width: 720px;
+  color: var(--pale-blue);
+  line-height: 1.8;
+}
+
+.news-article {
+  max-width: 820px;
+}
+
+.news-article-paragraph {
+  margin: 24px 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+.news-article-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.news-article-footer a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-article-footer a:hover {
+  color: var(--blue);
+}
+
+.news-detail-cta {
+  background: var(--background);
+}
+
+.news-detail-cta .section-title {
+  max-width: 700px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .news-detail-hero {
+    min-height: 450px;
+  }
+
+  .news-detail-content {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .news-article-paragraph {
+    font-size: 1rem;
+  }
+}
+
