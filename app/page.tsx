@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Hero from "../components/Hero";
+import FAQ from "../components/FAQ";
 
 const highlights = [
   {
@@ -177,6 +178,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FAQ />
 
       <section className="closing-cta">
         <div className="container closing-cta-inner">
