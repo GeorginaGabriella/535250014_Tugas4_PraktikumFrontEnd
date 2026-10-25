@@ -32,6 +32,7 @@ export default function ProjectsPage() {
               <p className="section-label">OUR PORTFOLIO</p>
               <h2 className="section-title">Explore our projects.</h2>
             </div>
+
             <p className="projects-count">
               {projects.length} Featured Projects
             </p>

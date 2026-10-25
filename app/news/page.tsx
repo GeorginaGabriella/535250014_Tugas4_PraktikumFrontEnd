@@ -30,7 +30,9 @@ export default function NewsPage() {
           <div className="projects-heading">
             <div>
               <p className="section-label">THE LATEST</p>
-              <h2 className="section-title">Stories and perspectives.</h2>
+              <h2 className="section-title">
+                Stories and perspectives.
+              </h2>
             </div>
 
             <p className="projects-count">
@@ -40,7 +42,10 @@ export default function NewsPage() {
 
           <div className="news-grid">
             {news.map((article) => (
-              <NewsCard key={article.slug} article={article} />
+              <NewsCard
+                key={article.slug}
+                article={article}
+              />
             ))}
           </div>
         </div>
