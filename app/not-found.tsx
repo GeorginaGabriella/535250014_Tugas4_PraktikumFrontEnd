@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <section className="section">
@@ -9,13 +11,13 @@ export default function NotFound() {
         <p className="section-description" style={{ marginInline: "auto" }}>
           The page you are looking for does not exist or may have been moved.
         </p>
-        <a
+        <Link
           href="/"
           className="primary-button"
           style={{ marginTop: "28px" }}
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </section>
   );
